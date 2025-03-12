@@ -118,13 +118,40 @@
 // // --------------------------inizio terzo esercizio ---------------------------------
 
 
-let num = 2;
-let counter = 1;
+// let num = 2;
+// let counter = 1;
 
-for(let i = 1; i <= 10; i++){
+// for(let i = 1; i <= 10; i++){
 
-    let risultato = num * counter;
-    console.log(`${num} per ${counter} è uguale a ${risultato}`);
-    counter++;
-}
+//     let risultato = num * counter;
+//     console.log(`${num} per ${counter} è uguale a ${risultato}`);
+//     counter++;
+// }
 // // --------------------------fine terzo esercizio ---------------------------------
+
+// // --------------------------inizio quarto esercizio ---------------------------------c
+
+
+
+let counterDispari = 0;
+let counterIndice  = 0;
+
+for(let i = 1; i <= 20; i++){
+
+
+    if(i % 2 == 0){
+        console.log(i);
+        
+    }else{
+        counterDispari = counterDispari + i;
+        counterIndice++;
+    }
+
+}
+
+let mediaDispari = counterDispari / counterIndice;
+console.log(`La media dei numeri dispari è uguale a ${mediaDispari}`);
+
+// // --------------------------fine quarto esercizio ---------------------------------
+
+
