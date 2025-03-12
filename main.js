@@ -85,32 +85,46 @@
 
 
 
-let temperatura = Number(prompt(`Inserisci la temperatura`));
+// let temperatura = Number(prompt(`Inserisci la temperatura`));
 
-switch(true){
+// switch(true){
 
-        case temperatura < 20 && temperatura >= 0:
-           console.log("non ci sono più le mezze stagioni");
-            break;
+//         case temperatura < 20 && temperatura >= 0:
+//            console.log("non ci sono più le mezze stagioni");
+//             break;
         
-        case temperatura >= 30 && temperatura<= 50:
-            console.log("lu mare, lu sole, lu ientu");
-                break;
+//         case temperatura >= 30 && temperatura<= 50:
+//             console.log("lu mare, lu sole, lu ientu");
+//                 break;
 
-        case temperatura < 30 && temperatura >= 20:
-            console.log("mi dia una peroni sudata");
-                break;
+//         case temperatura < 30 && temperatura >= 20:
+//             console.log("mi dia una peroni sudata");
+//                 break;
 
-        case temperatura < 0 && temperatura >= -10:
-            console.log("non è tanto il freddo quanto l'umidità");
-                break;
+//         case temperatura < 0 && temperatura >= -10:
+//             console.log("non è tanto il freddo quanto l'umidità");
+//                 break;
 
-        case temperatura < -10 && temperatura >= -30:
-            console.log("copriti...ancora ti raffreddi");
-                break;
+//         case temperatura < -10 && temperatura >= -30:
+//             console.log("copriti...ancora ti raffreddi");
+//                 break;
 
-        default:console.log("Ma che temperatura hai messo?");            
+//         default:console.log("Ma che temperatura hai messo?");            
                 
-}
+// }
 
-// --------------------------fine secondo esercizio ---------------------------------
+// // --------------------------fine secondo esercizio ---------------------------------
+
+// // --------------------------inizio terzo esercizio ---------------------------------
+
+
+let num = 2;
+let counter = 1;
+
+for(let i = 1; i <= 10; i++){
+
+    let risultato = num * counter;
+    console.log(`${num} per ${counter} è uguale a ${risultato}`);
+    counter++;
+}
+// // --------------------------fine terzo esercizio ---------------------------------
