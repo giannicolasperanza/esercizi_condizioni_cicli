@@ -133,25 +133,75 @@
 
 
 
-let counterDispari = 0;
-let counterIndice  = 0;
+// let counterDispari = 0;
+// let counterIndice  = 0;
 
-for(let i = 1; i <= 20; i++){
+// for(let i = 1; i <= 20; i++){
 
 
-    if(i % 2 == 0){
-        console.log(i);
+//     if(i % 2 == 0){
+//         console.log(i);
         
-    }else{
-        counterDispari = counterDispari + i;
-        counterIndice++;
-    }
+//     }else{
+//         counterDispari = counterDispari + i;
+//         counterIndice++;
+//     }
 
-}
+// }
 
-let mediaDispari = counterDispari / counterIndice;
-console.log(`La media dei numeri dispari è uguale a ${mediaDispari}`);
+// let mediaDispari = counterDispari / counterIndice;
+// console.log(`La media dei numeri dispari è uguale a ${mediaDispari}`);
 
 // // --------------------------fine quarto esercizio ---------------------------------
 
+// // --------------------------inizio quinto esercizio ---------------------------------
 
+
+// let scelta = Number(prompt(`Scegli la tua bevanda, digita il numero corrispondente: \n 1 - Acqua \n 2- Coca Cola \n 3- Birra`));
+
+// while(scelta != 1 && scelta != 2 && scelta != 3 ){
+//     alert("Questa scelta non è valida selziona una corretta")
+//     scelta = Number(prompt(`Scegli la tua bevanda, digita il numero corrispondente: \n 1 - Acqua \n 2- Coca Cola \n 3- Birra`));
+// }
+
+// if(scelta == 1){
+//     console.log(`E' stata selezionata l'acqua`);
+
+//  }else if(scelta == 2){
+//     console.log(`E' stata selezionata Coca Cola`);
+    
+//  }else if(scelta == 3){
+//     console.log(`E' stata selezionata Birra`);
+    
+//  }else{
+//     console.log(`La tua scelta non rientra fra quelle disponibili`);
+    
+//  }
+
+
+//  ---------prima soluzione------------
+//  ---------soluzione con extra----------
+
+let scelta = (prompt(`Scegli la tua bevanda: \n 1 - acqua \n 2- coca cola \n 3- birra`));
+
+while(scelta != "1" && scelta.toLowerCase() != "acqua" && scelta != "2" && scelta.toLowerCase() != "coca cola" && scelta != "3" && scelta.toLowerCase() != "birra" ){
+    alert("Questa scelta non è valida selziona una corretta")
+    scelta = prompt(`Scegli la tua bevanda, : \n 1 - acqua \n 2- coca cola \n 3- birra`);
+}
+
+if(scelta == "1" || scelta.toLowerCase() == "acqua"){
+    console.log(`E' stata selezionata l'acqua`);
+
+ }else if(scelta == "2" || scelta.toLowerCase() == "coca cola"){
+    console.log(`E' stata selezionata Coca Cola`);
+    
+ }else if(scelta == "3" || scelta.toLowerCase() == "birra"){
+    console.log(`E' stata selezionata Birra`);
+    
+ }else{
+    console.log(`La tua scelta non rientra fra quelle disponibili`);
+    
+ }
+
+
+// andrebbe ottimizzato per maius e minuscole
